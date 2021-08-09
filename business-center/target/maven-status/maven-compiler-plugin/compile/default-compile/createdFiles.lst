@@ -1,0 +1,4 @@
+com/stcc/business/controller/demo/DemoController.class
+com/stcc/business/BusinessApplication.class
+com/stcc/business/config/ObsClientConfig.class
+com/stcc/business/config/Swagger2Configuration.class
