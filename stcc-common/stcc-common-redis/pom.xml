@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>stcc-common-utils</artifactId>
-    <description>公用工具类</description>
+    <artifactId>stcc-common-redis</artifactId>
+    <description>redis配置</description>
 
 </project>

@@ -9,6 +9,8 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>stcc-common</module>
+        <module>stcc-api</module>
+        <module>stcc-business</module>
     </modules>
     <packaging>pom</packaging>
     <description>超叔</description>
@@ -158,18 +160,4 @@
         </plugins>
     </build>
 
-    <!-- 不同的打包环境 -->
-    <profiles>
-        <!-- 本地环境 -->
-        <profile>
-            <id>local</id>
-            <properties>
-                <env>local</env>
-                <skip>false</skip>
-            </properties>
-            <activation>
-                <activeByDefault>true</activeByDefault><!--默认启用的是local环境配置 -->
-            </activation>
-        </profile>
-    </profiles>
 </project>

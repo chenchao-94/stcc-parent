@@ -12,6 +12,9 @@
     <packaging>pom</packaging>
     <modules>
         <module>stcc-common-utils</module>
+        <module>stcc-common-redis</module>
+        <module>stcc-common-security</module>
+        <module>stcc-common-swagger</module>
     </modules>
     <description>公共通用模块</description>
 
