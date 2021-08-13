@@ -12,4 +12,14 @@
     <artifactId>stcc-common-redis</artifactId>
     <description>redis配置</description>
 
+<dependencyManagement>
+    <dependencies>
+        <!-- SpringBoot Boot Redis -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-redis</artifactId>
+        </dependency>
+    </dependencies>
+</dependencyManagement>
+
 </project>
