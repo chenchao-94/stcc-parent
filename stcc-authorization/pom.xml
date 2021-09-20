@@ -7,18 +7,13 @@
         <groupId>com.stcc</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
-    <modelVersion>4.0.0</modelVersion>
-    <artifactId>stcc-common</artifactId>
-    <packaging>pom</packaging>
-    <description>公共通用模块</description>
 
-    <modules>
-        <module>stcc-common-core</module>
-        <module>stcc-common-utils</module>
-        <module>stcc-common-redis</module>
-        <module>stcc-common-security</module>
-        <module>stcc-common-swagger</module>
-    </modules>
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>stcc-authorization</artifactId>
+    <packaging>jar</packaging>
+    <description>授权认证中心</description>
+
+
 
 
 </project>
