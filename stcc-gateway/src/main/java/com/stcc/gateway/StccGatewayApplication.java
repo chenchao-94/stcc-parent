@@ -7,8 +7,8 @@ import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 /**
  * 包名 com.stcc.gateway
  * 说明 网关启动
- * 作者 stcc
  * 创建时间 2021/9/14
+ * @author stcc
  */
 @SpringBootApplication(exclude = {DataSourceAutoConfiguration.class})
 public class StccGatewayApplication {

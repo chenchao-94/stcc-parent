@@ -33,6 +33,10 @@
             <groupId>com.alibaba</groupId>
             <artifactId>fastjson</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.stcc</groupId>
+            <artifactId>stcc-common-core</artifactId>
+        </dependency>
     </dependencies>
 
 </project>

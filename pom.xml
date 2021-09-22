@@ -19,6 +19,7 @@
 
     <!--项目版本相关定义开始 -->
     <properties>
+        <stcc.version>1.0-SNAPSHOT</stcc.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.8</java.version>
@@ -46,6 +47,18 @@
 
     <dependencyManagement>
         <dependencies>
+            <!--  stcc依赖配置 -->
+            <dependency>
+                <groupId>com.stcc</groupId>
+                <artifactId>stcc-common-core</artifactId>
+                <version>${stcc.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.stcc</groupId>
+                <artifactId>stcc-common-redis</artifactId>
+                <version>${stcc.version}</version>
+            </dependency>
+
             <!-- SpringBoot 依赖配置 -->
             <dependency>
                 <groupId>org.springframework.boot</groupId>

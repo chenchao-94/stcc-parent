@@ -14,7 +14,6 @@
 
     <modules>
         <module>stcc-common-core</module>
-        <module>stcc-common-utils</module>
         <module>stcc-common-redis</module>
         <module>stcc-common-security</module>
         <module>stcc-common-swagger</module>
