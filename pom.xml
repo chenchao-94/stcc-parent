@@ -13,6 +13,7 @@
         <module>stcc-business</module>
         <module>stcc-gateway</module>
         <module>stcc-authorization</module>
+        <module>stcc-study</module>
     </modules>
     <packaging>pom</packaging>
     <description>超叔</description>
@@ -30,7 +31,7 @@
         <org.apache.maven.plugins.version>2.22.2</org.apache.maven.plugins.version>
         <!--Http -->
         <httpcore.version>4.4.3</httpcore.version>
-        <httpclient.version>4.5.1</httpclient.version>
+        <httpclient.version>4.5.8</httpclient.version>
         <!--	华为云obs	-->
         <obs-java.version>3.20.6.2</obs-java.version>
         <lombok.version>1.18.16</lombok.version>
