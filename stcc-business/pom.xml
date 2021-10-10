@@ -10,8 +10,12 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>stcc-business</artifactId>
+    <packaging>pom</packaging>
     <description>业务中心</description>
 
+    <modules>
+        <module>stcc-consumers</module>
+    </modules>
 
 
 </project>
