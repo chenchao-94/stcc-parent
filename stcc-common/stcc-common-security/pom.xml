@@ -11,4 +11,29 @@
 
     <artifactId>stcc-common-security</artifactId>
     <description>安全模块</description>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>8</source>
+                    <target>8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <dependencies>
+        <!-- stcc Common Redis-->
+        <dependency>
+            <groupId>com.stcc</groupId>
+            <artifactId>stcc-common-redis</artifactId>
+        </dependency>
+        <!-- stcc Common core-->
+        <dependency>
+            <groupId>com.stcc</groupId>
+            <artifactId>stcc-common-core</artifactId>
+        </dependency>
+    </dependencies>
 </project>

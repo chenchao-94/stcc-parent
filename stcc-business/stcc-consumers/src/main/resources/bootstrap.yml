@@ -21,10 +21,10 @@ spring:
         # 配置中心地址
         server-addr: 127.0.0.1:8858
         # 配置文件格式
-        file-extension: yml
+        file-extension: yaml
         # 共享配置
         shared-configs:
-          - application-${spring.profiles.active}.${spring.cloud.nacos.config.file-extension}
+          - ${spring.application.name}-${spring.profiles.active}.${spring.cloud.nacos.config.file-extension}
   # redis配置
   redis:
     # 地址
@@ -43,3 +43,41 @@ spring:
         max-active: 8
         # 连接池最大阻塞等待时间（使用负值表示没有限制）
         max-wait: -1ms
+  # 配置数据库连接池
+  datasource:
+    # 配置当前数据源类型
+    type: com.alibaba.druid.pool.DruidDataSource
+    # 配置MySQL的驱动程序类
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    # 数据库连接地址(以MySql为例)
+    url: jdbc:mysql://127.0.0.1:3309/stcc-consumers?useUnicode=true&characterEncoding=utf8&characterSetResults=utf8
+    # 数据库对应的用户名
+    username: root
+    # 数据库对应的密码
+    password: 123456
+    # 配置druid数据库连接池
+    druid:
+      initial-size: 5
+      min-idle: 5
+      maxActive: 20
+      maxWait: 60000
+      timeBetweenEvictionRunsMillis: 60000
+      minEvictableIdleTimeMillis: 300000
+      validationQuery: SELECT 1 FROM DUAL
+      testWhileIdle: true
+      testOnBorrow: false
+      testOnReturn: false
+      poolPreparedStatements: true
+      maxPoolPreparedStatementPerConnectionSize: 20
+      filters: stat,wall
+      connectionProperties: druid.stat.mergeSql\=true;druid.stat.slowSqlMillis\=5000
+      enabled: true
+      web-stat-filter:
+        url-pattern: /*
+        exclusions: "*.js,*.gif,*.jpg,*.bmp,*.png,*.css,*.ico,/druid/*"
+      stat-view-servlet:
+        url-pattern: /druid/*
+        allow: 127.0.0.1
+        reset-enable: false
+        login-username: admin
+        login-password: 123456

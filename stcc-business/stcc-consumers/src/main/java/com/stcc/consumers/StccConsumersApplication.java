@@ -1,5 +1,7 @@
 package com.stcc.consumers;
 
+import com.stcc.common.security.annotation.StccEnableCustom;
+import com.stcc.common.security.annotation.StccEnableFeignClient;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -10,10 +12,12 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @author stcc
  */
 @SpringBootApplication
+@StccEnableCustom
+@StccEnableFeignClient
 public class StccConsumersApplication {
     public static void main(String[] args) {
         SpringApplication.run(StccConsumersApplication.class, args);
-        System.out.println("  ===============超叔用户中心启动成功=============== \n " +
+        System.out.println("===============用户中心启动成功=============== \n " +
                 "  ________  ___________  ______    ______   \n" +
                 " /\"       )(\"     _   \")/\" _  \"\\  /\" _  \"\\  \n" +
                 "(:   \\___/  )__/  \\\\__/(: ( \\___)(: ( \\___) \n" +

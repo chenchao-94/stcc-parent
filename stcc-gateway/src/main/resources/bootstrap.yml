@@ -21,10 +21,12 @@ spring:
         # 配置中心地址
         server-addr: 127.0.0.1:8858
         # 配置文件格式
-        file-extension: yml
+        file-extension: properties
         # 共享配置
         shared-configs:
-          - application-${spring.profiles.active}.${spring.cloud.nacos.config.file-extension}
+          - ${spring.application.name}-${spring.profiles.active}.${spring.cloud.nacos.config.file-extension}
+        #对应创建的命名空间的UUID
+        namespace: e2395208-00d1-45c9-8bd7-063fa384965f
     sentinel:
       # 取消控制台懒加载
       eager: true
@@ -40,21 +42,3 @@ spring:
             groupId: DEFAULT_GROUP
             data-type: json
             rule-type: flow
-  # redis配置
-  redis:
-    # 地址
-    host: 127.0.0.1
-    # 端口 默认为6379
-    port: 6979
-    # 连接超时时间
-    timeout: 30s
-    lettuce:
-      pool:
-        # 连接池中最小空闲连接数
-        min-idle: 0
-        # 连接池中最大空闲连接数
-        max-idle: 8
-        # 连接池中最大数据库连接数
-        max-active: 8
-        # 连接池最大阻塞等待时间（使用负值表示没有限制）
-        max-wait: -1ms

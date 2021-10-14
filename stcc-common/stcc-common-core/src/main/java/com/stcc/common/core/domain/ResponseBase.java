@@ -92,7 +92,7 @@ public class ResponseBase<T> implements Serializable {
 
     private static <T> ResponseBase<T> restResult(T data, int code, String msg)
     {
-        ResponseBase<T> apiResult = new ResponseBase<>();
+        ResponseBase<T> apiResult = new ResponseBase<T>();
         apiResult.setCode(code);
         apiResult.setData(data);
         apiResult.setMsg(msg);
