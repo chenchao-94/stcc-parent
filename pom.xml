@@ -13,7 +13,6 @@
         <module>stcc-business</module>
         <module>stcc-gateway</module>
         <module>stcc-authorization</module>
-        <module>stcc-study</module>
     </modules>
     <packaging>pom</packaging>
     <description>超叔</description>
@@ -222,6 +221,15 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>${spring.boot.version}</version>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
+                    <encoding>UTF-8</encoding>
+                </configuration>
             </plugin>
         </plugins>
     </build>
