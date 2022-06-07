@@ -13,9 +13,6 @@
     <packaging>pom</packaging>
     <description>业务中心</description>
 
-    <modules>
-        <module>stcc-consumers</module>
-    </modules>
 
 
 </project>

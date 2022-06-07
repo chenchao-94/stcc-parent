@@ -12,7 +12,6 @@
         <module>stcc-api</module>
         <module>stcc-business</module>
         <module>stcc-gateway</module>
-        <module>stcc-authorization</module>
     </modules>
     <packaging>pom</packaging>
     <description>超叔</description>
