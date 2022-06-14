@@ -3,22 +3,21 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-
     <groupId>com.stcc</groupId>
     <artifactId>stcc-parent</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0.0-SNAPSHOT</version>
     <modules>
-        <module>stcc-common</module>
-        <module>stcc-api</module>
         <module>stcc-business</module>
-        <module>stcc-gateway</module>
     </modules>
     <packaging>pom</packaging>
     <description>超叔</description>
 
+
     <!--项目版本相关定义开始 -->
     <properties>
-        <stcc.version>1.0-SNAPSHOT</stcc.version>
+        <stcc.version>1.0.0-SNAPSHOT</stcc.version>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.8</java.version>
@@ -37,7 +36,7 @@
         <mysql.version>8.0.25</mysql.version>
         <mybatis-spring-boot-starter.version>2.2.0</mybatis-spring-boot-starter.version>
         <druid-spring-boot-starter.version>1.1.22</druid-spring-boot-starter.version>
-         <pagehelper.boot.version>1.3.1</pagehelper.boot.version>
+        <pagehelper.boot.version>1.3.1</pagehelper.boot.version>
         <!--	swagger2	-->
         <swagger2.version>2.9.2</swagger2.version>
         <fastjson.version>1.2.76</fastjson.version>
@@ -47,27 +46,6 @@
 
     <dependencyManagement>
         <dependencies>
-            <!--  stcc依赖配置 -->
-            <dependency>
-                <groupId>com.stcc</groupId>
-                <artifactId>stcc-common-core</artifactId>
-                <version>${stcc.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.stcc</groupId>
-                <artifactId>stcc-common-redis</artifactId>
-                <version>${stcc.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.stcc</groupId>
-                <artifactId>stcc-common-security</artifactId>
-                <version>${stcc.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.stcc</groupId>
-                <artifactId>stcc-common-swagger</artifactId>
-                <version>${stcc.version}</version>
-            </dependency>
             <!-- SpringBoot 依赖配置 -->
             <dependency>
                 <groupId>org.springframework.boot</groupId>

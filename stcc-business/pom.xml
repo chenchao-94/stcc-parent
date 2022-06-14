@@ -5,14 +5,15 @@
     <parent>
         <artifactId>stcc-parent</artifactId>
         <groupId>com.stcc</groupId>
-        <version>1.0-SNAPSHOT</version>
+        <version>1.0.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-
     <artifactId>stcc-business</artifactId>
+    <description>业务组件</description>
+    <modules>
+        <module>stcc-formssi</module>
+    </modules>
     <packaging>pom</packaging>
-    <description>业务中心</description>
-
 
 
 </project>

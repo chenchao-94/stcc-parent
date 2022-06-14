@@ -1,2 +1,0 @@
-org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-  com.stcc.common.security.handler.GlobalExceptionHandler
